@@ -1,0 +1,12 @@
+web:
+ image: gestao
+ environment:
+ - ALLOW_OVERRIDE=true
+ ports:
+ - "80:80"
+ tty: true
+ volumes:
+ - /home/work/dev/watcher:/app
+ - /home/work/dev/apache:/etc/php5/apache2
+ - /home/work/dev/sites-available:/etc/apache2/sites-available
+
